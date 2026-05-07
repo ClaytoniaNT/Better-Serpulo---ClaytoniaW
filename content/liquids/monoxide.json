@@ -1,0 +1,7 @@
+{
+  "type": "Liquid",
+  "gas": true,
+  "flammability": 1,
+  "color": "2d2828",
+  "research": "oil"
+}

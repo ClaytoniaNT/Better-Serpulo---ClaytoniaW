@@ -1,0 +1,241 @@
+{
+    "reload": 34,
+    "recoil": 0.2,
+    "maxAmmo": 15,
+    "range": 120,
+    "ammoPerShot": 2,
+
+    "shootSound": "fuseBlah",
+
+    "shake": 0,
+
+    "drawer": {
+       "type": "DrawTurret",
+       "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-barrel",
+          "moveY": -1.4,
+          "moveX": 0,
+          "mirror": false,
+          "heatProgress": "recoil",
+          "progress": "recoil",
+          "under": false
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-top"
+        }
+       ]
+    },
+
+    "shoot": {
+        "type": "ShootSpread",
+        "shots": 8,
+        "spread": 1.9
+    },
+    "ammoTypes": {
+        "titanium": {
+            "sprite": "bs-shrapnel-bullet",
+            "type": "BasicBulletType",
+            "speed": 6,
+            "lifetime": 17,
+            "width": 4.4,
+            "height": 16,
+            "damage": 13,
+
+            "reflectable": false,
+            "absorbable": false,
+
+            "frontColor": "ffffff",
+            "backColor": "7575c8",
+            
+            "pierce": true,
+            "pierceCap": 1,
+
+            "ammoMultiplier": 2,
+            "reloadMultiplier": 1.1,
+
+            "velocityScaleRandMin": 0.9, 
+            "velocityScaleRandMax": 1.2,
+
+            "despawnEffect": [{
+                    "type": "ParticleEffect",
+                    "lifetime": 14,
+                    "line": true,
+                    "particles": 3,
+                    "length": 30,
+                    "cone": 15,
+                    "colorFrom": "7575c8",
+                    "colorTo": "ffffff00"
+                }
+            ],
+            "hitEffect": [ {
+                    "type": "ParticleEffect",
+                    "lifetime": 16,
+                    "line": true,
+                    "particles": 2,
+                    "length": 30,
+                    "cone": 0,
+                    "colorFrom": "7575c8",
+                    "colorTo": "ffffff00"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "lifetime": 13,
+                    "line": true,
+                    "particles": 2,
+                    "length": 30,
+                    "cone": 0,
+                    "colorFrom": "bcc0ff",
+                    "colorTo": "ffffff00"
+                }
+            ],
+            "trailWidth": 0.85,
+            "trailColor": "7575c8",
+            "trailLength": 2
+        },
+        "thorium": {
+            "sprite": "bs-shrapnel-bullet",
+            "type": "BasicBulletType",
+            "speed": 6,
+            "lifetime": 17,
+            "width": 4.4,
+            "height": 16,
+            "damage": 18,
+
+            "reflectable": false,
+            "absorbable": false,
+
+            "frontColor": "ffffff",
+            "backColor": "f595be",
+            
+            "pierce": true,
+            "pierceCap": 2,
+
+            "reloadMultiplier": 1,
+
+            "velocityScaleRandMin": 0.9,
+            "velocityScaleRandMax": 1.2,
+
+            "despawnEffect": [{
+                    "type": "ParticleEffect",
+                    "lifetime": 14,
+                    "line": true,
+                    "particles": 3,
+                    "length": 30,
+                    "cone": 15,
+                    "colorFrom": "f595be",
+                    "colorTo": "ffffff00"
+                }
+            ],
+            "hitEffect": [ {
+                    "type": "ParticleEffect",
+                    "lifetime": 14,
+                    "line": true,
+                    "particles": 1,
+                    "length": 30,
+                    "cone": 0,
+                    "colorFrom": "f595be",
+                    "colorTo": "ffffff00"
+                }
+            ],
+            "trailWidth": 0.85,
+            "trailColor": "f595be",
+            "trailLength": 2
+        },
+        "surge-alloy": {
+            "sprite": "bs-shrapnel-bullet",
+            "type": "BasicBulletType",
+            "speed": 6,
+            "lifetime": 17,
+            "width": 4.4,
+            "height": 16,
+            "damage": 16,
+
+            "reflectable": false,
+            "absorbable": false,
+
+            "frontColor": "ffffff",
+            "backColor": "f3e979",
+
+            "splashDamage": 2,
+            "splashDamageRadius": 20,
+            
+            "pierce": true,
+            "pierceCap": 2,
+
+            "reloadMultiplier": 1.25,
+
+            "velocityScaleRandMin": 0.9,
+            "velocityScaleRandMax": 1.2,
+
+            "despawnEffect": [{
+                    "type": "ParticleEffect",
+                    "lifetime": 14,
+                    "line": true,
+                    "particles": 3,
+                    "length": 30,
+                    "cone": 15,
+                    "colorFrom": "ffd259",
+                    "colorTo": "ffffff00"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "lifetime": 19,
+                    "line": true,
+                    "particles": 2,
+                    "length": 30,
+                    "cone": 0,
+                    "colorFrom": "f3e979",
+                    "colorTo": "ffffff00"
+                },
+                {
+                    "region": "white",
+                    "type": "ParticleEffect",
+                    "lifetime": 20,
+                    "line": true,
+                    "particles": 2,
+                    "length": 30,
+                    "cone": 0,
+                    "colorFrom": "f3e979",
+                    "colorTo": "ffffff00"
+                }
+            ],
+            "hitEffect": [ {
+                    "type": "ParticleEffect",
+                    "lifetime": 14,
+                    "line": true,
+                    "particles": 1,
+                    "length": 30,
+                    "cone": 0,
+                    "colorFrom": "ffd259",
+                    "colorTo": "ffffff00"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "lifetime": 18,
+                    "line": true,
+                    "particles": 1,
+                    "length": 30,
+                    "cone": 0,
+                    "colorFrom": "f3e979",
+                    "colorTo": "ffffff00"
+                }
+            ],
+            "trailWidth": 0.85,
+            "trailColor": "f3e979",
+            "trailLength": 2,
+            "trailInterval": 1,
+            "trailEffect": [{
+                    "region": "white",
+                    "type": "ParticleEffect",
+                    "spin": 10,
+                    "lifetime": 8,
+                    "particles": 1,
+                    "colorFrom": "f3e979",
+                    "colorTo": "ffffff00"
+            }]
+        }
+    }
+}

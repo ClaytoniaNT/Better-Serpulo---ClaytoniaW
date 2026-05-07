@@ -1,0 +1,23 @@
+{
+    "type": "BufferedItemBridge",
+    
+    "size": 1,
+    "health": 40,
+
+    "bufferCapacity": 18,
+    "range": 5,
+    "speed": 5.3,
+
+    "requirements": [
+        {"item":"titanium","amount": 6},
+        {"item":"lead","amount":6}
+    ],
+
+    "category": "distribution",
+    "research": {
+        "parent": "bridge-conveyor",
+        "objetive": {
+            "capture":"windsweptdIslands"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  
+  "type": "wall",
+  
+  "size": 1,
+  "health": 270,
+  "armor": 2,
+
+  "floating": true,
+  
+  "requirements": [
+    {"item":"metaglass","amount":6}
+    ],
+    
+    "category": "defense",
+    "research": {
+      "parent": "copper-wall"
+    }
+  
+}

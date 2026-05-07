@@ -1,0 +1,17 @@
+{
+
+  "type": "StorageBlock",
+  "researchCostMultiplier": 0.7,
+  "itemCapacity": 100,
+  "size": 1,
+  "health": 110,
+  "category": "effect",
+  "requirements": [
+    {"item":"copper","amount":15},
+    {"item":"lead","amount":13},
+    {"item":"silicon","amount":11}
+  ],
+  "research": {
+    "parent": "router"
+  }
+}

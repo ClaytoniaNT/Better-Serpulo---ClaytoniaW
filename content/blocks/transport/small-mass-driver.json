@@ -1,0 +1,34 @@
+{
+    "type": "MassDriver",
+    
+    "size": 2,
+    "hasPower": true,
+    "health": 750,
+
+    "rotateSpeed": 5,
+    "reload": 150,
+    "range": 200,
+    "itemCapacity": 70,
+    "minDistribute": 10,
+    "shake": 1,
+
+    "squareSprite": true,
+
+    "consumes":{
+        "power": 1.5
+    },
+
+    "requirements": [
+        {"item":"copper","amount":110},
+        {"item":"lead","amount":140},
+        {"item":"silicon","amount":90}
+    ],
+
+    "category": "distribution",
+    "research": {
+        "parent": "router",
+        "objetive": {
+            "capture":"windsweptdIslands"
+        }
+    }
+}

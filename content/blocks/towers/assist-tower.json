@@ -1,0 +1,36 @@
+{
+    "type": "BuildTurret",
+    
+    "size": 2,
+    "hasPower": true,
+    "hasItems": true,
+    "health": 1100,
+
+    "liquidCapacity": 100,
+
+    "squareSprite": true,
+    "buildSpeed": 1.3,
+    "range": 170,
+
+
+    "consumes":{
+        "power": 3,
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.30
+        }
+    },
+
+    "requirements": [
+        {"item":"thorium","amount":90},
+        {"item":"titanium","amount":50},
+        {"item":"silicon","amount":80},
+        {"item":"plastanium","amount":70}
+    ],
+
+    "category": "effect",
+    "research": {
+        "parent": "mend-projector",
+        "objetive": ["thorium"]
+    }
+}

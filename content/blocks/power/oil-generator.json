@@ -1,0 +1,88 @@
+{
+  "type": "ConsumeGenerator",
+  "health": 980,
+  "size": 2,
+  "squareSprite": true,
+  "explodeOnFull": true,
+  
+  "powerProduction": 10,
+  "itemDuration": 0,
+  "baseExplosiveness": 20,
+  "itemCapacity": 0,
+
+  "ambientSound": "oil-generator",
+
+  "consumeEffect": [
+    {
+
+    }
+  ],
+  
+  "consumes": {
+      "liquid": {
+        "liquid": "oil",
+        "amount": 0.084
+      }
+  },
+
+  "outputLiquid": {
+    "liquid": "monoxide",
+    "amount": 0.08
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "drawPistons",
+        "suffix": "-piston",
+        "sides": 8,
+        "sinMag": 1.2,
+        "sinScl": 4,
+        "sideOffset": 2
+
+      },
+      {
+        "type": "drawRegion",
+        "suffix": "-propeller",
+        "rotateSpeed": 20,
+        "spinSprite": true
+      },
+      {
+        "type": "drawLiquidTile",
+        "drawLiquid": "monoxide"
+      },
+      {
+        "type": "drawDefault"
+      },
+      {
+        "type": "drawRegion",
+        "suffix": "-top"
+      },
+      {
+        "type": "drawGlowRegion",
+        "alpha": 1,
+        "glowScale": 5,
+        "color": "f8c266" 
+      }
+    ]
+   },
+  
+
+    "requirements": [
+      {"item":"copper","amount":55},
+      {"item":"lead","amount":45},
+      {"item":"silicon","amount":44},
+      {"item":"titanium","amount":30}
+    ],
+    
+    "category": "power",
+    "research": {
+      "parent": "steam-generator"
+    }
+  
+}

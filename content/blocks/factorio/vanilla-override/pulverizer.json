@@ -1,0 +1,7 @@
+{
+    "conductivePower": true,
+
+    "consumes":{
+        "power": 0.25
+    }
+}

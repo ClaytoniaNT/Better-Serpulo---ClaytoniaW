@@ -1,0 +1,74 @@
+{
+    "type": "AttributeCrafter",
+    
+    "size": 3,
+    "hasPower": true,
+    "hasItems": true,
+    "health": 1100,
+
+    "craftTime": 135,
+    "craftEffect": "none",
+    "ambientSound": "machine",
+    "warmupSpeed": 0.035,
+    "itemCapacity": 20,
+    "liquidCapacity": 100,
+
+    "squareSprite": true,
+    "attribute": "spores",
+    "maxBoost": 1.5,
+    "envRequired": 1,
+
+    "consumes":{
+        "power": 2.4,
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.44
+        },
+        "items": {
+            "items": [
+                "sand/3"
+            ]
+        }
+    },
+
+    "outputItems": [
+        "spore-pod/6"
+    ],
+
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            {
+                "type": "drawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "drawLiquidTile",
+                "drawLiquid": "water"
+            },
+            {
+                "type": "drawCultivator"
+            },
+            {
+                "type": "drawDefault"
+            },
+            {
+                "type": "drawRegion",
+                "suffix": "-top"
+            }
+        ]
+    },
+
+    "requirements": [
+        {"item":"copper","amount":40},
+        {"item":"titanium","amount":20},
+        {"item":"silicon","amount":30},
+        {"item":"plastanium","amount":70}
+    ],
+
+    "category": "production",
+    "research": {
+        "parent": "cultivator",
+        "objetive": ["plastanium"]
+    }
+}

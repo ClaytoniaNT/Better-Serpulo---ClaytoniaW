@@ -1,0 +1,60 @@
+{
+    "type": "GenericCrafter",
+    
+    "size": 2,
+    "hasPower": true,
+    "hasItems": true,
+    "health": 900,
+
+    "craftTime": 80,
+    "craftEffect": "pulverize",
+    "ambientSound": "grinding",
+    "warmupSpeed": 0.037,
+    "itemCapacity": 20,
+
+    "squareSprite": true,
+
+    "consumes":{
+        "power": 1.2,
+        "items": {
+            "items": [
+                "scrap/3"
+            ]
+        }
+    },
+
+    "outputItems": [
+        "sand/2"
+    ],
+
+    "drawer": {
+        "type": "drawMulti",
+        "drawers": [
+            {
+                "type": "drawDefault"
+            },
+            {
+                "type": "drawRegion",
+                "suffix": "-rotor",
+                "spinSprite": true,
+                "rotateSpeed": 2.5
+            },
+            {
+                "type": "drawRegion",
+                "suffix": "-top"
+            }
+        ]
+    },
+
+    "requirements": [
+        {"item":"copper","amount":40},
+        {"item":"lead","amount":34},
+        {"item":"titanium","amount":25}
+    ],
+
+    "category": "crafting",
+    "research": {
+        "parent": "pulverizer",
+        "objetive": ["titanium"]
+    }
+}
