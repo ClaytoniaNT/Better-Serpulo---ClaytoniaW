@@ -1,11 +1,11 @@
 {
-  "name": "bs",
+  "name": "bs", //I realised way to late
 
   "displayName": "Complemented Serpulo",
   "subtitle": "Complementary mod! | Indev v0.1",
   "description": "Tries to extend Serpulo content following the vanilla style and also being balanced, Tries, So it would fail miserably",
-  "author": "[[]magenta]Claytonita",
-  "version": 0.5,
+  "author": "[[]magenta]ClaytoniaW",
+  "version": 1,
   "minGameVersion": 146,
   "java": false,
   
