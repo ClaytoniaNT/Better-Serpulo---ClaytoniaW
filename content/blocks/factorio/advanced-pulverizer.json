@@ -6,7 +6,7 @@
     "hasItems": true,
     "health": 900,
 
-    "craftTime": 80,
+    "craftTime": 75,
     "craftEffect": "pulverize",
     "ambientSound": "grinding",
     "warmupSpeed": 0.037,
